@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 3 | Facebook-style Homepage</title>
+  <!-- Bootstrap 5.3.3 is included locally so this assignment works offline. -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/facebook.css">
+</head>
+<body>
+
+
+<header class="navbar navbar-expand-lg sticky-top bg-white shadow-sm px-3 py-2 gap-2">
+  <div class="d-flex align-items-center gap-2">
+    <div class="fb-logo rounded-circle d-flex align-items-center justify-content-center">f</div>
+    <div class="d-none d-sm-flex align-items-center gap-2 bg-body-tertiary rounded-pill px-3 py-2 search-box">
+      <span class="search-icon"></span>
+      <input class="form-control form-control-sm border-0 bg-transparent" type="search" aria-label="Search posts" id="searchPosts" placeholder="Search Facebook">
+    </div>
+  </div>
+
+  <nav aria-label="Primary navigation" class="nav nav-pills d-none d-lg-flex flex-grow-1 justify-content-center gap-1">
+    <a href="#" class="nav-link nav-icon active" data-demo="Home" aria-label="Home">&#127968;</a>
+    <a href="#" class="nav-link nav-icon" data-demo="Friends" aria-label="Friends">&#128101;</a>
+    <a href="#" class="nav-link nav-icon" data-demo="Watch" aria-label="Watch">&#127909;</a>
+    <a href="#" class="nav-link nav-icon" data-demo="Gaming" aria-label="Gaming">&#127942;</a>
+    <a href="#" class="nav-link nav-icon" data-demo="Menu" aria-label="Menu">&#128288;</a>
+  </nav>
+
+  <div class="d-flex align-items-center gap-2 ms-auto">
+    <button class="btn btn-light rounded-circle pill-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    <button type="button" class="btn btn-light rounded-circle pill-btn" data-demo="Notifications" aria-label="Notifications">&#128172;</button>
+    <button type="button" class="btn btn-light rounded-circle pill-btn" data-demo="Notifications" aria-label="Notifications">&#128276;</button>
+    <div class="avatar-sm"></div>
+  </div>
+</header>
+
+<div class="container-fluid py-3 px-2 px-md-3"><div class="row g-3 justify-content-center align-items-start">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="col-lg-3 d-none d-lg-block sidebar-left">
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-avatar me"></div> Insha Khan</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#128101;</div> Friends</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#127909;</div> Watch</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#128722;</div> Marketplace</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#128101;</div> Groups</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#128197;</div> Events</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#128337;</div> Memories</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-icon rounded-circle d-flex align-items-center justify-content-center">&#128465;</div> Saved</a>
+    <div class="border-top my-2"></div>
+    <div style="padding:8px; color:var(--muted); font-weight:600; font-size:15px;">Your shortcuts</div>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-avatar blue"></div> Web Development</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-avatar purple"></div> AI Study Group</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-avatar teal"></div> BSCS &ndash; V &ndash; A</a>
+    <a href="#" class="d-flex align-items-center gap-2 rounded p-2 side-item" data-demo="Preview"><div class="side-avatar orange"></div> Algorithms Club</a>
+  </aside>
+
+  <!-- CENTER FEED -->
+  <main id="feed" class="col-12 col-md-9 col-lg-6 col-xl-6 d-flex flex-column gap-3 feed">
+
+    <!-- stories -->
+    <div class="d-flex gap-2 overflow-x-auto pb-1 stories">
+      <div class="story position-relative rounded-3 overflow-hidden shadow-sm flex-shrink-0 add">
+        <div class="thumb"></div>
+        <div class="plus">+</div>
+        <span>Create story</span>
+      </div>
+      <div class="story position-relative rounded-3 overflow-hidden shadow-sm flex-shrink-0 s1">
+        <div class="story-avatar"></div>
+        <div class="story-name">Sana Iram</div>
+      </div>
+      <div class="story position-relative rounded-3 overflow-hidden shadow-sm flex-shrink-0 s2">
+        <div class="story-avatar"></div>
+        <div class="story-name">Roman Fatima</div>
+      </div>
+      <div class="story position-relative rounded-3 overflow-hidden shadow-sm flex-shrink-0 s3">
+        <div class="story-avatar"></div>
+        <div class="story-name">Wania Rehman</div>
+      </div>
+      <div class="story position-relative rounded-3 overflow-hidden shadow-sm flex-shrink-0 s4">
+        <div class="story-avatar"></div>
+        <div class="story-name">Mahnoor Ghazal</div>
+      </div>
+    </div>
+
+    <h1 class="visually-hidden">Facebook-style home feed</h1><!-- create post -->
+    <div class="card border-0 shadow-sm p-3">
+      <div class="d-flex align-items-center gap-2 pb-3 border-bottom">
+        <div class="avatar-sm"></div>
+        <button class="btn btn-light rounded-pill text-start text-secondary flex-grow-1" data-bs-toggle="modal" data-bs-target="#postModal">What's on your mind, Insha?</button>
+      </div>
+      <div class="d-flex justify-content-around gap-1 pt-2 flex-wrap">
+        <div class="btn btn-light d-flex align-items-center gap-2 cp-action"><span aria-hidden="true" class="dot live"></span> Live video</div>
+        <div class="btn btn-light d-flex align-items-center gap-2 cp-action"><span aria-hidden="true" class="dot photo"></span> Photo/video</div>
+        <div class="btn btn-light d-flex align-items-center gap-2 cp-action"><span aria-hidden="true" class="dot feeling"></span> Feeling/activity</div>
+      </div>
+    </div>
+
+    <!-- post 1 -->
+    <div class="card border-0 shadow-sm p-3">
+      <div class="d-flex align-items-center gap-2">
+        <div class="avatar-sm"></div>
+        <div>
+          <div class="fw-semibold">Aniqa Irshad</div>
+          <div class="small text-secondary">2 hrs &middot; &#127760;</div>
+        </div>
+        <div class="ms-auto text-secondary fs-4">&#8943;</div>
+      </div>
+      <div class="my-3">Finally submitted my HTML/CSS assignment! Recreating real UI layouts is such a good way to practice layout and typography. &#128187;</div>
+      <div class="post-image p1" role="img" aria-label="Blue gradient post illustration"></div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 py-2 border-bottom small text-secondary">
+        <div class="d-flex align-items-center gap-1">
+          <span class="reaction-icons"><span class="r1"></span><span class="r2"></span><span class="r3"></span></span>
+          128
+        </div>
+        <div>24 comments &middot; 6 shares</div>
+      </div>
+      <div class="d-flex gap-1 pt-2">
+        <button class="btn btn-light flex-fill pbtn like-button" type="button" aria-pressed="false">👍 Like</button>
+        <button class="btn btn-light flex-fill pbtn" type="button" data-bs-toggle="collapse" data-bs-target="#comments0" aria-expanded="false" aria-controls="comments0">💬 Comment</button>
+        <button class="btn btn-light flex-fill pbtn" type="button" data-demo="Share">↪ Share</button>
+      </div><div class="collapse pt-2" id="comments0"><label class="form-label small" for="comment0">Write a comment (demo)</label><input id="comment0" class="form-control rounded-pill" placeholder="Write a comment…"></div>
+    </div>
+
+    <!-- post 2 -->
+    <div class="card border-0 shadow-sm p-3">
+      <div class="d-flex align-items-center gap-2">
+        <div class="avatar-sm"></div>
+        <div>
+          <div class="fw-semibold">BSCS &ndash; V &ndash; A</div>
+          <div class="small text-secondary">5 hrs &middot; &#128101;</div>
+        </div>
+        <div class="ms-auto text-secondary fs-4">&#8943;</div>
+      </div>
+      <div class="my-3">Reminder: Full Stack Web Development lab moved to Lab 5, A Block this Thursday. See you all there!</div>
+      <div class="post-image p2" role="img" aria-label="Peach gradient post illustration"></div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 py-2 border-bottom small text-secondary">
+        <div class="d-flex align-items-center gap-1">
+          <span class="reaction-icons"><span class="r1"></span><span class="r2"></span></span>
+          52
+        </div>
+        <div>9 comments</div>
+      </div>
+      <div class="d-flex gap-1 pt-2">
+        <button class="btn btn-light flex-fill pbtn like-button" type="button" aria-pressed="false">👍 Like</button>
+        <button class="btn btn-light flex-fill pbtn" type="button" data-bs-toggle="collapse" data-bs-target="#comments1" aria-expanded="false" aria-controls="comments1">💬 Comment</button>
+        <button class="btn btn-light flex-fill pbtn" type="button" data-demo="Share">↪ Share</button>
+      </div><div class="collapse pt-2" id="comments1"><label class="form-label small" for="comment1">Write a comment (demo)</label><input id="comment1" class="form-control rounded-pill" placeholder="Write a comment…"></div>
+    </div>
+
+  </main>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="col-xl-3 d-none d-xl-block sidebar-right">
+    <div class="fw-semibold text-secondary p-2">Sponsored</div>
+    <a href="#" class="d-flex gap-2 p-2 rounded sponsored-item" data-demo="Preview">
+      <div class="sponsored-thumb sp1"></div>
+      <div>
+        <div class="fw-semibold mb-1">Online CS Courses</div>
+        <div class="small text-secondary">learnwithus.com</div>
+      </div>
+    </a>
+    <a href="#" class="d-flex gap-2 p-2 rounded sponsored-item" data-demo="Preview">
+      <div class="sponsored-thumb sp2"></div>
+      <div>
+        <div class="fw-semibold mb-1">Campus Hoodies &ndash; 20% Off</div>
+        <div class="small text-secondary">campusstore.pk</div>
+      </div>
+    </a>
+
+    <div class="border-top my-2"></div>
+    <div class="fw-semibold text-secondary p-2">Contacts</div>
+    <a href="#" class="d-flex align-items-center gap-2 position-relative p-2 rounded contact-item" data-demo="Preview">
+      <div class="contact-avatar" style="background:#f6a821;"></div>
+      <div class="online-dot"></div>
+      Hamza Khan
+    </a>
+    <a href="#" class="d-flex align-items-center gap-2 position-relative p-2 rounded contact-item" data-demo="Preview">
+      <div class="contact-avatar" style="background:#8c52ff;"></div>
+      <div class="online-dot"></div>
+      Sara Malik
+    </a>
+    <a href="#" class="d-flex align-items-center gap-2 position-relative p-2 rounded contact-item" data-demo="Preview">
+      <div class="contact-avatar" style="background:#17b3a3;"></div>
+      Fatima Noor
+    </a>
+    <a href="#" class="d-flex align-items-center gap-2 position-relative p-2 rounded contact-item" data-demo="Preview">
+      <div class="contact-avatar" style="background:#ff5c8a;"></div>
+      <div class="online-dot"></div>
+      Junaid Nazar
+    </a>
+  </aside>
+
+</div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="menuTitle">
+  <div class="offcanvas-header"><h2 class="offcanvas-title h5" id="menuTitle">Menu</h2><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+  <div class="offcanvas-body"><p class="fw-semibold">Insha Khan</p><nav class="nav flex-column" aria-label="Mobile menu">
+    <a class="nav-link" href="index.html">Lab 3 tasks</a><a class="nav-link" href="Q1-timetable.html">Timetable</a>
+    <a class="nav-link" href="#feed" data-bs-dismiss="offcanvas">Home feed</a></nav><hr><p>Friends · Watch · Marketplace · Groups · Events · Memories · Saved</p></div>
+</div>
+<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <form id="postForm"><div class="modal-header"><h2 id="postTitle" class="modal-title fs-5">Create post</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><label for="postText" class="form-label">What's on your mind, Insha?</label><textarea id="postText" class="form-control" rows="4" maxlength="2000" required></textarea><p class="small text-secondary mt-2 mb-0">Classroom demo. Posts remain only until this page is reloaded.</p></div>
+    <div class="modal-footer"><button class="btn btn-primary w-100" type="submit">Post</button></div></form>
+  </div></div>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="demoToast" class="toast" role="status" aria-live="polite" aria-atomic="true"><div class="toast-header"><strong class="me-auto">Lab 3 preview</strong><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div><div class="toast-body">This is a classroom UI demonstration.</div></div></div>
+<footer class="text-center small text-secondary py-4"><a href="index.html">Lab 3 tasks</a> · Bootstrap homepage recreation · Educational demo</footer>
+<script src="assets/facebook.js" defer></script>
+
+<script src="assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

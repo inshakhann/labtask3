@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 3 | Bootstrap Timetable</title>
+  <!-- Bootstrap 5.3.3 is included locally so this assignment works offline. -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/timetable.css">
+</head>
+<body>
+<main class="container-xxl py-4 py-md-5">
+  <nav class="d-flex justify-content-between align-items-center mb-3 d-print-none" aria-label="Lab tasks">
+    <a href="index.html" class="btn btn-sm btn-outline-secondary">← All tasks</a>
+    <a href="Q2-facebook-homepage.html" class="btn btn-sm btn-outline-primary">Task 02 →</a>
+  </nav>
+  <section class="card border-0 shadow-sm overflow-hidden sheet" aria-labelledby="schedule-title">
+    <header class="p-3 p-md-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <span class="text-secondary small">Air University</span>
+        <span class="badge rounded-pill semester">Shift I · Fall 2026</span>
+      </div>
+      <h1 id="schedule-title" class="text-center fw-bold mb-2">BSCS‑V‑A (Shift‑I)</h1>
+      <p class="text-center text-secondary small mb-0">Weekly class timetable</p>
+    </header>
+    <div class="px-3 px-md-4 pb-4">
+      <p class="small text-secondary d-lg-none">Swipe horizontally to view all time slots.</p>
+      <div class="table-responsive rounded border"><!-- Bootstrap table utilities provide borders, alignment and responsive scrolling. -->
+<table class="table table-bordered text-center align-middle mb-0 timetable">
+<caption class="visually-hidden">BSCS V A, Shift I, Fall 2026 weekly timetable at Air University</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="corner">Day</th>
+          <th scope="col"><span class="range">08:00&ndash;09:00 am</span><span class="clock">8:00&ndash;9:00</span></th>
+          <th scope="col"><span class="range">09:00&ndash;10:00 am</span><span class="clock">9:00&ndash;10:00</span></th>
+          <th scope="col"><span class="range">10:00&ndash;11:00 am</span><span class="clock">10:00&ndash;11:00</span></th>
+          <th scope="col"><span class="range">11:00&ndash;12:00 pm</span><span class="clock">11:00&ndash;12:00</span></th>
+          <th scope="col"><span class="range">12:00&ndash;01:00 pm</span><span class="clock">12:00&ndash;1:00</span></th>
+          <th scope="col"><span class="range">01:00&ndash;02:00 pm</span><span class="clock">1:00&ndash;2:00</span></th>
+          <th scope="col"><span class="range">02:00&ndash;03:00 pm</span><span class="clock">2:00&ndash;3:00</span></th>
+          <th scope="col"><span class="range">03:00&ndash;04:00 pm</span><span class="clock">3:00&ndash;4:00</span></th>
+          <th scope="col"><span class="range">04:00&ndash;05:00 pm</span><span class="clock">4:00&ndash;5:00</span></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- MONDAY -->
+        <tr>
+          <th scope="row" class="day-cell"><span class="day-letters">Mo</span></th>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Ms Maryam Wardah</div>
+            <div class="course">Artificial Intelligence</div>
+            <div class="room">C&ndash;205 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Ms Warda Aslam / Ms Eeman Fatima</div>
+            <div class="course">Operating Systems</div>
+            <div class="room">Lecture Hall 01</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Mr Muhammad Junaid Nazar</div>
+            <div class="course">Design and Analysis of Algorithms</div>
+            <div class="room">C&ndash;202 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">Maths &ndash; Dr Waqas Sarwar Abbasi</div>
+            <div class="course">Linear Algebra</div>
+            <div class="room">C&ndash;301 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot filled">
+            <div class="teacher">AUSOM &ndash; Ms Ayesha Munir&ndash;VFM</div>
+            <div class="course">Introduction to Management</div>
+            <div class="room">C&ndash;303 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+        </tr>
+
+        <!-- TUESDAY -->
+        <tr>
+          <th scope="row" class="day-cell"><span class="day-letters">Tu</span></th>
+          <td class="slot lab" colspan="2">
+            <div class="teacher">CS &ndash; Ms Maryam Wardah</div>
+            <div class="course">Artificial Intelligence Lab</div>
+            <div class="room">Lab 5 A Block (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot filled">
+            <div class="teacher">Maths &ndash; Dr Waqas Sarwar Abbasi</div>
+            <div class="course">Linear Algebra</div>
+            <div class="room">C&ndash;203 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Mr Muhammad Junaid Nazar</div>
+            <div class="course">Design and Analysis of Algorithms</div>
+            <div class="room">C&ndash;302 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Ms Warda Aslam / Ms Eeman Fatima</div>
+            <div class="course">Operating Systems</div>
+            <div class="room">Lecture Hall 01</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+        </tr>
+
+        <!-- WEDNESDAY -->
+        <tr>
+          <th scope="row" class="day-cell"><span class="day-letters">We</span></th>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Mr Muhammad Junaid Nazar</div>
+            <div class="course">Design and Analysis of Algorithms</div>
+            <div class="room">C&ndash;302 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot lab" colspan="3">
+            <div class="teacher">CS &ndash; Ms Warda Aslam</div>
+            <div class="course">Operating Systems Lab</div>
+            <div class="room">Lab 13 C Block (3rd Floor) (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Mr Hafiz Obiad Ullah Khan / Mr Asim Ali Fayyaz</div>
+            <div class="course">Full Stack Web Development</div>
+            <div class="room">Lecture Hall 01, C&ndash;206 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+        </tr>
+
+        <!-- THURSDAY -->
+        <tr>
+          <th scope="row" class="day-cell"><span class="day-letters">Th</span></th>
+          <td class="slot empty"></td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Ms Maryam Wardah</div>
+            <div class="course">Artificial Intelligence</div>
+            <div class="room">C&ndash;202 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot lab" colspan="3">
+            <div class="teacher">CS &ndash; Mr Hafiz Obiad Ullah Khan</div>
+            <div class="course">Full Stack Web Development Lab</div>
+            <div class="room">Lab 5 A Block (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Mr Hafiz Obiad Ullah Khan / Mr Asim Ali Fayyaz</div>
+            <div class="course">Full Stack Web Development</div>
+            <div class="room">Lecture Hall 01, C&ndash;306 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+        </tr>
+
+        <!-- FRIDAY -->
+        <tr>
+          <th scope="row" class="day-cell"><span class="day-letters">Fr</span></th>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot filled">
+            <div class="teacher">AUSOM &ndash; Ms Ayesha Munir&ndash;VFM</div>
+            <div class="course">Introduction to Management</div>
+            <div class="room">C&ndash;302 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">Maths &ndash; Dr Waqas Sarwar Abbasi</div>
+            <div class="course">Linear Algebra</div>
+            <div class="room">C&ndash;301 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot filled">
+            <div class="teacher">CS &ndash; Ms Eeman Fatima</div>
+            <div class="course">Advisory Class</div>
+            <div class="room">C&ndash;202 (Shift&ndash;I)</div>
+          </td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+          <td class="slot empty"></td>
+        </tr>
+
+      </tbody>
+    </table></div>
+    </div>
+    <footer class="border-top px-4 py-3 d-flex flex-wrap gap-3 justify-content-between small text-secondary">
+      <span>Monday – Friday · 08:00 am – 05:00 pm</span>
+      <span><span class="legend-lab me-1"></span> Laboratory session</span>
+    </footer>
+  </section>
+</main>
+<script src="assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

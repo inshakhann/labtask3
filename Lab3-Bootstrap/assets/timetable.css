@@ -1,0 +1,14 @@
+/* Custom theme only; Bootstrap handles layout, responsiveness and table structure. */
+body{background:#f7f5f0;color:#2b2b28}
+.sheet{--bs-card-border-radius:12px}h1{font-family:Georgia,serif;color:#1a2942;font-size:clamp(1.65rem,4vw,2.5rem)}
+.semester{background:#f0e2c8;color:#77531f;padding:.65em 1em}
+.timetable{min-width:1100px;table-layout:fixed;--bs-table-border-color:#dcd7cb}
+.timetable thead th{--bs-table-bg:#1a2942;--bs-table-color:white;padding:14px 5px;font-weight:600;vertical-align:middle}
+.corner{width:64px}.range{font-size:12px;display:block}.clock{font-size:10px;font-weight:400;opacity:.75;display:block;margin-top:3px}
+.timetable .day-cell{--bs-table-bg:#f0e2c8;--bs-table-color:#1a2942;font-family:Georgia,serif;font-size:25px}
+.timetable .slot{height:116px;padding:10px 7px;vertical-align:middle}
+.timetable .empty{background:repeating-linear-gradient(135deg,#fff,#fff 8px,#faf9f6 8px,#faf9f6 16px)}
+.timetable .lab{--bs-table-bg:#edf4ef}.teacher{font-size:10.5px;color:#6b6558;line-height:1.4;margin-bottom:5px}
+.course{font-weight:700;font-size:12px;color:#1a2942;line-height:1.4;margin-bottom:5px}.lab .course{font-size:15px}
+.room{font-size:10.5px;color:#87612c;font-weight:600}.legend-lab{display:inline-block;width:12px;height:12px;background:#edf4ef;border:1px solid #b2c8b8}
+@media print{@page{size:landscape;margin:8mm}body{background:white}.container-xxl{padding:0!important;max-width:none}.timetable{min-width:0}.table-responsive{overflow:visible}.sheet{box-shadow:none!important}.timetable .slot{height:90px}.d-lg-none{display:none}}

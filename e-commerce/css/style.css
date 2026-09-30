@@ -1,0 +1,12 @@
+:root{--ink:#1f2a2e;--accent:#2f6f62;--sand:#f6f3ee}
+body{background:var(--sand);color:var(--ink);font-family:'Inter',system-ui,sans-serif}
+h1,h2,h3,.navbar-brand{font-family:'Fraunces',Georgia,serif}
+.navbar{background:var(--ink)}
+.btn-accent{background:var(--accent);color:#fff;border:0}
+.btn-accent:hover{background:#245a4f;color:#fff}
+.hero{background:linear-gradient(rgba(31,42,46,.65),rgba(31,42,46,.65)),url(https://picsum.photos/seed/homehero/1600/700) center/cover;color:#fff;padding:7rem 0}
+.product-card img{height:220px;object-fit:cover}
+.star{color:#e0a100}
+.price{font-weight:600;color:var(--accent)}
+.cart-img{width:72px;height:72px;object-fit:cover;border-radius:.5rem}
+footer{background:var(--ink);color:#cfd6d8}
